@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você acorda na manhã de um dia ensolarado em uma pequena vila. 
+                Enquanto toma seu café da manhã na varanda de sua casa, um velho mapa cai de um livro antigo que você encontrou na biblioteca.
+                O mapa mostra a localização de uma caverna esquecida que, segundo a lenda, guarda um grande segredo.</p>
+            <button class="btn-proximo" data-proximo="1">Ir até o velho marinheiro da vila</button>
+            <button class="btn-proximo" data-proximo="2">Visitar a biblioteca local para investigar mais sobre a história da ilha</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide ir até o velho marinheiro da vila.
+                Ao se aproximar, você vê o marinheiro sentado em uma cadeira de balanço, consertando uma rede.
+                Você conta tudo para ele.
+                O marinheiro olha para você com espanto e diz:
+                “Ah, a floresta esquecida... Ouvi falar sobre ela, ela fica no topo da montanha. Se você quiser ir, posso te dar um conselho: leve
+                muito cuidado com os caminhos pela floresta e nunca vá sozinho. Há coisas que a gente não compreende por lá.” <br>
+                Com o aviso do marinheiro em mente, você decide tomar uma decisão.
+            </p>
+            <button class="btn-proximo" data-proximo="5">Explorar a montanha em busca do tesouro, enfrentando os perigos desconhecidos.</button>
+            <button class="btn-proximo" data-proximo="4">Deixar a montanha para lá e voltar para a vila.</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você encontra uma seção dedicada a lendas e histórias locais. Entre os livros antigos e manuscritos, você encontra um volume encadernado em couro que chama sua atenção.
+                O livro descreve a floresta como um lugar que foi habitado por uma antiga civilização que adorava uma divindade da natureza. 
+                Diz também que, após um grande desastre, a civilização desapareceu, mas deixou para trás um artefato poderoso escondido em um templo subterrâneo.
+                O livro diz que a floresta e o templo pode ficar na montanha da ilha ou no interior da ilha. Onde você decide procurar?
+            </p>
+            <button class="btn-proximo" data-proximo="5">Investigar as montanhas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar o centro da ilha</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4.png" alt="imagem dormindo">
+            <p>O perigo descrito pelo marinheiro e o tesouro perdido são fascinantes, mas você sente que explorar mais a fundo pode ser
+            arriscado demais. Você decide ficar em casa e voltar a dormir.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5.png" alt="Monstro misterioso">
+            <p>No topo da montanha, ao invés de encontrar o templo, você encontra uma criatura misteriosa, que remete a um ser humano porém muito mais peludo e maior.</p>
+            <button class="btn-proximo" data-proximo="7">Fugir do monstro</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando o centro da ilha, você encontra a floresta perdida e o templo subterrâneo.</p>
+            <button class="btn-proximo" data-proximo="8">Entrar no templo</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Quando você começa a fugir, ele começa a correr atrás de você.
+                Durante a sua fuga, você se depara com um rio lhe impedindo de atravessar, você só pode ir para à direita ou à esquerda.
+            </p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Dentro do templo, você encontra diversas criaturas lendária e enigmas bizarros! Ao passar por todos, você encontra um baú destrancado na sala do templo onde costumava ficar o rei</p>
+            <button class="btn-proximo" data-proximo="11">Abrir o baú</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você corre tanto do monstro que acaba o despistando, e quando vê, você está no centro da ilha. A floresta é real e o templo também.</p>
+            <button class="btn-proximo" data-proximo="8">Entrar no templo</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/cenario-passo10.png" alt="O monstro te alcança">
+            <p>O rio à direita termina em um penhasco, você não consegue fugir e você nunca mais é visto novamente.</p>
+            <button class="btn-proximo" data-proximo="1">Retornar e tentar novamente</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Dentro do baú você encontra uma fruta nunca antes vista. 
+                De acordo com os livros, essa fruta garante vida eterna para aquele o comer, plantado e cultivado pelos moradores da floresta a muito tempo atrás.
+                Que achado!
+                </p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
